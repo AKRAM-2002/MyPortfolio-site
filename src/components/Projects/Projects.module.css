@@ -1,0 +1,46 @@
+/* Projects.module.css */
+.projects{
+  padding: 5rem 0;
+}
+.title{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.title hr{
+    width: 80px;
+    padding: 0 30px;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+.title span{
+    color: var(--brand-color);
+}
+.projects {
+    background-color: #f4f4f4;
+   
+  }
+
+  .cards{
+    display: grid; /* grid 2 columns 3rows*/
+    grid-template-columns: repeat(3,1fr);
+    position: relative;
+    left: 4rem;
+    right: 2rem;
+  }
+
+
+
+  .projectContent {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+ 
+  
+  .projectContent h3 {
+    font-size: 16px;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  
