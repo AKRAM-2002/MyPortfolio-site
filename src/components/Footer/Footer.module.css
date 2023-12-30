@@ -36,3 +36,9 @@
     color: #61dafb; /* Change to your desired hover color */
   }
   
+
+  @media screen and (max-width: 768px){
+    h3{
+      font-size: 1em;
+    }
+    }

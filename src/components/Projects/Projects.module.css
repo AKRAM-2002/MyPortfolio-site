@@ -1,6 +1,6 @@
 /* Projects.module.css */
 .projects{
-  padding: 5rem 0;
+  
 }
 .title{
     text-align: center;
@@ -15,18 +15,22 @@
 .title span{
     color: var(--brand-color);
 }
-.projects {
-    background-color: #f4f4f4;
-   
-  }
 
-  .cards{
-    display: grid; /* grid 2 columns 3rows*/
-    grid-template-columns: repeat(3,1fr);
-    position: relative;
-    left: 4rem;
-    right: 2rem;
-  }
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.cardsP {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 20px; }
 
 
 
@@ -42,5 +46,44 @@
     color: #333;
     margin: 20px 0;
   }
-  
+
+  /* for the project card */
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 18px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  margin-bottom: 20px; /* Add margin to space out the cards */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.cardImage {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.link {
+  margin-right: 8px;
+  color: #3498db;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+
+  .cardsP {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    gap: 60px;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 20px; }
+
+}
   

@@ -1,10 +1,9 @@
 
 .about{
     padding: 4rem 0;
-    background-color: var(--bg-light);
     scroll-margin-top: 5.5rem;
-    padding-right: 5rem;
-    padding-left: 5rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
 }
 
 .title{
@@ -22,9 +21,7 @@
     border: 1px solid #000;
 }
 
-.about-img{
-    position: relative;
-}
+
 .about-img img{
     height: auto;
     width: 31rem;
@@ -44,24 +41,33 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
-        display: flex;
-        justify-content: center;
-        
+        padding: 0;
 
     }
     .about-img img{
-        width: 90%;
+        
         display: flex;
         flex-direction: column;
         padding-bottom: 2rem;
-        padding: auto;
-        justify-content: center;
+       
+        max-width: 90%;
         margin: auto;
         
     }
     .about-content{
-        max-width: 100%;
-        justify-self: center;
+        align-self: center;
+        max-width: 90%;
+        padding: 0;
+        margin: auto;
     }
+}
+
+/* responsive */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* CSS rules for general iPad screens */
+    .about-content, .about-img{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        }
+        
 }

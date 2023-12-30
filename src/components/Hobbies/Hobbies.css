@@ -1,0 +1,21 @@
+/* Hobbies.css */
+
+.Hobbies-section {
+    text-align: center;
+    padding: 60px 20px;
+    
+  }
+  
+  .Hobbies-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .Hobbies {
+    font-size: 1rem;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
