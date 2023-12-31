@@ -1,0 +1,29 @@
+
+.Hobbies-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.Hobbies-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000; 
+}
+
+.Hobbies-text {
+  font-size: 1.2rem;
+  color: #555; 
+  max-width: 800px; 
+  margin: 0 auto;
+  line-height: 1.5; 
+}
+
+.animated-heading {
+  animation: fadeIn 1.5s ease-out; 
+}
+
+.animated-text {
+  animation: fadeIn 1.5s ease-out 0.5s; 
+  
+}

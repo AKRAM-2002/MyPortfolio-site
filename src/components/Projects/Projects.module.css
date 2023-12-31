@@ -5,6 +5,7 @@
 .title{
     text-align: center;
     font-size: 1.5rem;
+    
 }
 .title hr{
     width: 80px;
@@ -15,10 +16,10 @@
 .title span{
     color: var(--brand-color);
 }
-.projects {
-    background-color: #f4f4f4;
-   
-  }
+
+.animatedHeading {
+  animation: fadeIn 1.5s ease-out; 
+}
 
   .cards{
     display: grid; /* grid 2 columns 3rows*/
@@ -43,4 +44,92 @@
     margin: 20px 0;
   }
   
+/* Projects.module.css */
+.projects{
+  
+}
+.title{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.title hr{
+    width: 80px;
+    padding: 0 30px;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+.title span{
+    color: var(--brand-color);
+}
+
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.cardsP {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 20px; }
+
+
+
+  .projectContent {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+ 
+  
+  .projectContent h3 {
+    font-size: 16px;
+    color: #333;
+    margin: 20px 0;
+  }
+
+  /* for the project card */
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 18px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  margin-bottom: 20px; /* Add margin to space out the cards */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.cardImage {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.link {
+  margin-right: 8px;
+  color: #3498db;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+
+  .cardsP {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    gap: 60px;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 20px; }
+
+}
   
