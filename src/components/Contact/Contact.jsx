@@ -1,36 +1,42 @@
+// Contact.jsx
 import React from 'react';
 import { Button } from "@mui/material";
-import './Contact.css'
-// import '../../index.css'
+import './Contact.css';
+
 const Contact = () => {
   return (
-    <>
     <section className="contact-section">
+      <div className="contact-container">
         <h2>Contact Me</h2>
+        <p>
+          I am interested in freelance opportunities - especially ambitious or large projects. However, if you have other requests or questions, feel free to reach out to me for any inquiries or opportunities.
+        </p>
         <form className="contact-form">
-          <input
-            className="name-input"
-            placeholder="Your Name"
-            required
-            type="text"
-          />
-          <input
-            className="email-input"
-            placeholder="Your Email"
-            required
-            type="email"
-          />
+          <div className="input-grid">
+            <input
+              className="input-field"
+              placeholder="Your Name"
+              required
+              type="text"
+            />
+            <input
+              className="input-field"
+              placeholder="Your Email"
+              required
+              type="email"
+            />
+          </div>
           <textarea
-            className="message-area"
+            className="input-field message-area"
             placeholder="Your Message"
             required
             rows="4"
           />
-          <Button  className=''>Send Message</Button>
+          <Button className="submit-button">Send Message</Button>
         </form>
-      </section>
-    </>
-  )
-}
+      </div>
+    </section>
+  );
+};
 
-export default Contact
+export default Contact;

@@ -1,44 +1,64 @@
 /* Contact.css */
 
 .contact-section {
-    text-align: center;
-    padding: 60px 20px;
-  }
-  
-  .contact-section h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .contact-form {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  
-  .name-input,
-  .email-input,
-  .message-area {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  .message-area {
-    resize: vertical;
-  }
-  
-  .contact-form button {
-    padding-top: 0.75rem;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contact-container {
+  display: grid;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.contact-form {
+  display: grid;
+  gap: 20px;
+}
+
+.input-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.message-area {
+  resize: vertical;
+}
+
+
+
+.contact-form button {
+  padding-top: 0.75rem;
     padding-bottom: 0.75rem; 
     padding-left: 2rem;
     padding-right: 2rem; 
     border-radius: 0.375rem; 
     color: #ffffff; 
     background-color: #3B82F6; 
-  }
-  
-  
-  
+}
+
+.submit-button:hover {
+  background-color: #2563eb;
+}
