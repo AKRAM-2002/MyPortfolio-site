@@ -25,7 +25,7 @@ const Projects = () => {
                 date="(2023)"
                 description=""
                 stack={['React',' Js', ' Css']}
-                codeLink=""
+                codeLink="https://github.com/Codey-ma/frontend"
                 liveDemoLink=""
                 imageSrc={Codeysite}
                 altText="Codey Website"
@@ -45,8 +45,8 @@ const Projects = () => {
                 date="(2023)"
                 description=""
                 stack={['React']}
-                codeLink=""
-                liveDemoLink=""
+                codeLink="https://github.com/AKRAM-2002/Gym-DashBoard"
+                liveDemoLink="https://gym-dash-board.vercel.app/"
                 imageSrc=""
                 altText="Gym DashBoard"
               />
