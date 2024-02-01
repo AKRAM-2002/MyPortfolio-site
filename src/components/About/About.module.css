@@ -11,7 +11,7 @@
     font-size: 1.5rem;
 }
 
-.about span{
+.about h2 span.me{
     color: var(--brand-color);
 }
 .title hr{

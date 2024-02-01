@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import ProjectItem from './ProjectItem'; 
 import styles from './Projects.module.css';
 //assets
-import DWG from '../../images/dwglandP.png'
-import Codeysite from '../../images/codeysite.png'
-import GymDashboardImage from '../../images/codeysite.png'
+import DWG from '../../images/dwglandP.png';
+import Codeysite from '../../images/codeysite.png';
+import GymDashboardImage from '../../images/codeysite.png';
+import AnimatedLetters from '../../components/AnimatedLetters';
 
 const Projects = () => {
 
@@ -73,12 +74,16 @@ const Projects = () => {
     setSelectedCategory(category);
   };
   
+
+  const [letterClass, setLetterClass] = useState('text-animate')
+  const titleArray = ['S','E','L','E','C','T','E','D','']
+
   return (
     <section id="projects" className={styles.projects}>
       <div className={styles.container}>
         <div className={styles.projectContent}>
         <div className={styles.title}>
-          <h2 className={styles.animatedHeading}>Selected <span>Works</span></h2><hr />
+          <h2><AnimatedLetters letterClass={letterClass} strArray={titleArray} /><span className={styles.me}>Works</span></h2><hr />
         </div>
           {/* <h3>Explore My Portfolio Projects 🚀</h3> */}
           <div className={styles.projectCategories}>

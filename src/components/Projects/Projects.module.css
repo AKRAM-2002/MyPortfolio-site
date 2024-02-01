@@ -13,7 +13,7 @@
     margin: 0 auto;
     border: 1px solid #000;
 }
-.title span{
+.title h2 span.me{
     color: var(--brand-color);
 }
 
@@ -95,9 +95,7 @@
     margin: 0 auto;
     border: 1px solid #000;
 }
-.title span{
-    color: var(--brand-color);
-}
+
 
 
 

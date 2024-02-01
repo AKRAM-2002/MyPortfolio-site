@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './About.module.css';
 import random from '../../images/random.jpg';
 import AnimatedLetters from '../../components/AnimatedLetters'
@@ -8,11 +8,15 @@ const About = () => {
 
     
 
+    const [letterClass, setLetterClass] = useState('text-animate')
+    const titleArray = ['A','B','O','U','T']
+
+
   return (
     <section id='about' className={styles.about}>
         <div className="container">
             <div className={styles.title}>
-                <h2>About <span>Me</span></h2><hr />
+                <h2><AnimatedLetters letterClass={letterClass} strArray={titleArray} /> <span className={styles.me}>Me</span></h2><hr />
             </div>
             <div className="grid">
                 <div className={styles['about-img']}>
