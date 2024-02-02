@@ -5,6 +5,7 @@
   --danger-color: #ea4343;
   --brand-color: #147efb;
 }
+
 *, ::before, ::after{
   box-sizing: border-box;
   margin: 0;
@@ -93,6 +94,23 @@ h1, h2, h3, h4, h5, h6 {
   
 }
 
+
+/*animations */
+
+.animated-heading {
+  animation: slideInFromTop 1s ease-out; /* Example animation */
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 @keyframes fadeIn {
   from {

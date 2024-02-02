@@ -1,12 +1,19 @@
 // Contact.jsx
-import React from 'react';
+import React, { useRef } from 'react';
 import { Button } from "@mui/material";
 import './Contact.css';
+import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const Contact = () => {
+
+  const contactRef = useRef();
+  const headingRef = useRef();
+  useScrollAnimation(contactRef, 'animated-heading', headingRef);
+
+
   return (
-    <section className="contact-section">
-      <h2>Contact Me</h2>
+    <section className="contact-section" ref={contactRef}>
+      <h2 ref={headingRef}>Contact <span>Me</span></h2>
       <div className="contact-container">
         <div className="left">
           <p>

@@ -1,8 +1,7 @@
 /* Hobbies.css */
 .hobbies-section {
   text-align: center;
-  padding: 60px 20px;
-}
+  padding: 60px 20px;}
 
 .hobbies-heading {
   font-size: 2.2rem;
@@ -13,14 +12,9 @@
 
 .hobbies-text {
   font-size: 1.1rem;
-  color: #555;
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
-}
-
-.animated-heading {
-  animation: fadeIn 3.5s ease-out;
 }
 
 .animated-text {

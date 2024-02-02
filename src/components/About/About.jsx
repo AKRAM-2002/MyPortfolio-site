@@ -1,22 +1,26 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import styles from './About.module.css';
 import random from '../../images/random.jpg';
 import AnimatedLetters from '../../components/AnimatedLetters'
+import useScrollAnimation from '../hooks/useScrollAnimation';
 
 
 const About = () => {
-
     
-
     const [letterClass, setLetterClass] = useState('text-animate')
     const titleArray = ['A','B','O','U','T']
 
+    const aboutRef = useRef();
+    const headingRef = useRef();
+    useScrollAnimation(aboutRef, 'animated-heading', headingRef);
+    
+
 
   return (
-    <section id='about' className={styles.about}>
+    <section id='about' className={styles.about} ref={aboutRef}>
         <div className="container">
-            <div className={styles.title}>
-                <h2><AnimatedLetters letterClass={letterClass} strArray={titleArray} /> <span className={styles.me}>Me</span></h2><hr />
+            <div className={styles.title} ref={headingRef}>
+                <h2 className='animated-heading'><AnimatedLetters letterClass={letterClass} strArray={titleArray} /> <span className={styles.me}>Me</span></h2><hr />
             </div>
             <div className="grid">
                 <div className={styles['about-img']}>
