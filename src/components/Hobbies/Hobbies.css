@@ -21,6 +21,13 @@
   animation: fadeIn 3.5s ease-out 0.5s;
 }
 
+.hobbies-section hr{
+  width: 80px;
+  padding: 0 30px;
+  margin: 10px auto;
+  margin-top: -10px;
+  border: 1px solid #000;
+}
 
 @keyframes fadeIn {
   from {

@@ -14,14 +14,21 @@
 }
 
 .contact-section h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.contact-section h2 span{
+.contact-section h2 span.me{
   color: var(--brand-color);
 }
 
+hr{
+  width: 80px;
+  padding: 0 10px;
+  margin: 0 auto;
+  margin-top: -10px;
+  border: 1px solid #000;
+}
 .contact-section p {
   font-size: 0.98rem;
   
