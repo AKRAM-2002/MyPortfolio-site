@@ -69,8 +69,7 @@ const Navbar = () => {
 
     const handleSectionClick = (event)=>{
         event.preventDefault();
-        const sectionId = event.target.getAttribute('href').
-        substring(1);
+        const sectionId = event.target.getAttribute('href').substring(1);
         const section = document.getElementById(sectionId);
 
         if(section){
