@@ -3,7 +3,7 @@
   --bg-light: #f9f9f9;
   --dark-color: rgba(15, 20, 30, 0.8);
   --danger-color: #ea4343;
-  --brand-color: #147efb;
+  --brand-color: #0d5c99;
 }
 
 *, ::before, ::after{
@@ -22,7 +22,6 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-
 }
 
 .container{

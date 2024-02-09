@@ -54,6 +54,10 @@ const Contact = () => {
     e.target.reset();
   };
 
+  
+  const [location, setLocation] = useState({ lat: 51.505, lng: -0.09 }); // Set initial coordinates
+
+
   return (
     <section className="contact-section" ref={contactRef}>
       <div className={styles.title} ref={headingRef}>
@@ -94,18 +98,18 @@ const Contact = () => {
           </form>
         </div>
         <div className="right">
-          {/* Add Cubespinner */}
-          <div className="info-map">
-        
-        </div>
-        <div className="map-wrap">
-          <MapContainer center={[44.96366, 19.61045]} zoom={13}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[44.96366, 19.61045]}>
-              <Popup>Sloba lives here, come over for a cup of coffee :)</Popup>
+
+      
+        <MapContainer center={location} zoom={13} style={{ height: "300px", width: "100%" }}>
+            <TileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={location}>
+              <Popup>Your Location</Popup>
             </Marker>
-          </MapContainer>
-        </div>
+        </MapContainer>
+
+
         </div>
       </div>
     </section>
